@@ -133,9 +133,9 @@ _Note:_ The most difficult stretch goal(s) could take an expert an hour or more.
 
 Start with the most _familiar (or fun) sounding_ stretch goal.
   Complete search component to your list views.
- - [ ] Add the `<SearchForm />` component (see `./components/SearchForm.js`).
- - [ ] Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
-- [ ] _Remember:_ `useEffect` must reference any state on which it _depends_.
+ - [x] Add the `<SearchForm />` component (see `./components/SearchForm.js`).
+ - [x] Wire up the `onSearch(name)` callback prop to support [querying the API](https://rickandmortyapi.com/documentation/#filter-characters). (To search for `rick`, you would request `/api/character/?name=rick`.)
+- [x] _Remember:_ `useEffect` must reference any state on which it _depends_.
 
 
 - [ ] Animate page transition and/or card loading.
@@ -143,7 +143,7 @@ Start with the most _familiar (or fun) sounding_ stretch goal.
 - [ ] Add error handling for all async (axios/AJAX) calls. (Including some styled UI.)
 - [ ] Add a "details view" and route to show more details for each type of record. (Hint: Look into route parameters or nested routes.)
   - [ ] Similar to the "details view" now with a UI twist: use a [modal](https://react.semantic-ui.com/modules/modal/#variations-size) component to show item view. (If you can, build [modal with routes](https://codesandbox.io/s/react-router-modal-gallery-classes-example-z98l5).)
-- [ ] Add [paging support](https://react.semantic-ui.com/addons/pagination/#types-pagination) (next/previous links.)
+- [x] Add [paging support](https://react.semantic-ui.com/addons/pagination/#types-pagination) (next/previous links.)
 - [ ] Refactor to use as few Components as possible - while still readable to a React Dev. (Hint: research these patterns: HoC, render props, FaaC.)
 - [ ] Add additional fields to search form. They are unique for each endpoint. See [**Available parameters**.](https://rickandmortyapi.com/documentation/#filter-characters), etc..
 - [ ] Use the [GraphQL Endpoint](https://rickandmortyapi.com/documentation/#graphql) with multiple search fields.
@@ -154,8 +154,8 @@ Start with the most _familiar (or fun) sounding_ stretch goal.
 
 > Follow these steps to complete your project:
 
-- [ ] Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
-- [ ] Add your TL as a Reviewer on the Pull Request.
+- [x] Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
+- [x] Add your TL as a Reviewer on the Pull Request.
 - [ ] TL then will count the HW as done by merging the branch into master.
 
 
