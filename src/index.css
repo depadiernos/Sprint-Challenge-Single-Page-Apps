@@ -9,9 +9,17 @@ main {
   min-height: 80vh;
   max-width: 1024px;
   margin: 35px auto;
-  background: #fff;
   padding: 15px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background: lightgray;
+  border-radius: 5px;
+}
+
+section {
+  background: white;
+  border: 1px solid black;
+  border-top: 0;
+  text-align: center;
 }
 
 .grid-view {
@@ -27,13 +35,11 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
-
-header h1 {
-  text-align: center;
 }
+
+
