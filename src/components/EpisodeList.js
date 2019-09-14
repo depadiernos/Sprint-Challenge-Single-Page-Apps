@@ -10,10 +10,13 @@ const Header = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    padding: 1rem;
+  }
 `
 
 export default function EpisodeList() {
-  const [pages, setPages] = useState([])
+  const [pages] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [episodes, setEpisodes] = useState([])
   const [maxpage, setMaxpage] = useState(1)
@@ -38,6 +41,7 @@ export default function EpisodeList() {
         })
         .catch((err) => console.log(err))
     }
+    // eslint-disable-next-line
   }, [currentPage])
 
   return (
@@ -65,7 +69,7 @@ export default function EpisodeList() {
           })
         ) : (
           <div className="grid-view">
-            <Loader type="Puff" color="gray" height={300} width={300} />
+            <Loader type="Watch" color="gray" height={300} width={300} />
           </div>
         )}
       </div>

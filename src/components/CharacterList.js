@@ -10,10 +10,13 @@ const Header = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    padding: 1rem;
+  }
 `
 
 export default function CharacterList() {
-  const [pages, setPages] = useState([])
+  const [pages] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [characters, setCharacters] = useState([])  
   const [maxpage, setMaxpage] = useState(1)
@@ -42,6 +45,7 @@ export default function CharacterList() {
         })
         .catch((err) => console.log(err))
     }
+    // eslint-disable-next-line
   }, [currentPage])
 
   return (
@@ -69,7 +73,7 @@ export default function CharacterList() {
           })
         ) : (
           <div className="grid-view">
-            <Loader type="Puff" color="gray" height={300} width={300} />
+            <Loader type="Watch" color="gray" height={300} width={300} />
           </div>
         )}
       </div>

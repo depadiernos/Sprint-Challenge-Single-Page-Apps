@@ -10,14 +10,16 @@ const Header = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    padding: 1rem;
+  }
 `
 
 export default function LocationList() {
-  const [pages, setPages] = useState([])
+  const [pages] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [locations, setLocations] = useState([])
   const [maxpage, setMaxpage] = useState(1)
-
 
   useEffect(() => {
     let exists = false
@@ -39,7 +41,7 @@ export default function LocationList() {
           ])
         })
         .catch((err) => console.log(err))
-    }
+    }// eslint-disable-next-line
   }, [currentPage])
 
   return (
@@ -56,18 +58,18 @@ export default function LocationList() {
             direction="next"
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
-            maxpage= {maxpage}
+            maxpage={maxpage}
           />
         </div>
       </Header>
       <div className="grid-view">
         {locations[currentPage - 1] && locations[currentPage - 1].results ? (
           locations[currentPage - 1].results.map((location, index) => {
-            return <LocationCard key={index} location={location}/>
+            return <LocationCard key={index} location={location} />
           })
         ) : (
           <div className="grid-view">
-            <Loader type="Puff" color="gray" height={300} width={300} />
+            <Loader type="Watch" color="gray" height={300} width={300} />
           </div>
         )}
       </div>

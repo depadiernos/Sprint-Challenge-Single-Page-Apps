@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Redirect, Switch } from "react-router-dom"
+import { Route } from "react-router-dom"
 import TabNav from "./components/TabNav"
 import Header from "./components/Header"
 import WelcomePage from "./components/WelcomePage"

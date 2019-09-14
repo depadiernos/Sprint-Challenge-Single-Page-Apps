@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Style = styled.header`
   text-align: center;
   background: lightgray;
+  padding: 1rem;
   h1 {
     color: white;
     text-shadow:

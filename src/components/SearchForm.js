@@ -11,7 +11,7 @@ const Style = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 30vh;
   background: white;
   border: 1px solid black;
   border-top: 0;
@@ -76,7 +76,7 @@ function SearchForm({ status, errors, touched, isSubmitting }) {
               <CharacterCard key={index} character={character} />
             ) : (
               index < 5 && <div className="grid-view">
-                <Loader type="Puff" color="gray" height={300} width={300} />
+                <Loader type="Watch" color="gray" height={300} width={300} />
               </div>
             )
           )}
